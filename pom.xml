@@ -15,7 +15,7 @@
     <dependency>
 	  <groupId>com.datastax.astra</groupId>
 	  <artifactId>astra-sdk</artifactId>
-	  <version>0.3.0</version>
+	  <version>0.4</version>
     </dependency>
   </dependencies>
 </project>
