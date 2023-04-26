@@ -16,8 +16,8 @@ public class AstraSdkDrivers {
 
             try(CqlSession cqlSession = astraClient.cqlSession()) {
                 System.out.println("+ Cql Version (cql)   : " + cqlSession
-                        .execute("SELECT cql_version from system.local")
-                        .one().getString("cql_version"));
+                  .execute("SELECT cql_version from system.local")
+                  .one().getString("cql_version"));
             }
         }
     }

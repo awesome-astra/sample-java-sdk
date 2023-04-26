@@ -16,16 +16,13 @@ public class QuickStartAstra {
     public static final String ASTRA_DB_ID       = "CHANGE_ME";
     public static final String ASTRA_DB_REGION   = "CHANGE_ME";
     public static final String ASTRA_DB_KEYSPACE = "CHANGE_ME";
-    
+    /*
     public static void main(String[] args) {
         try (AstraClient astraClient = configureAstraClient()) {
             // Devops
             testDevopsStreamingApi(astraClient);
             testDevopsOrganizationApi(astraClient);
             testDevopsDatabaseApi(astraClient);
-            // Stargate
-            testCqlApi(astraClient);
-            testRestApi(astraClient);
             testDocumentApi(astraClient);
             testGraphQLApi(astraClient);
             testGrpcApi(astraClient);
@@ -66,20 +63,8 @@ public class QuickStartAstra {
             System.out.println("+ keyspace=" + db.getInfo().getKeyspace());
         });
     }
-    
-    public static void testCqlApi(AstraClient astraClient) {
-        System.out.println("\n[STARGATE/CQL]");
-        CqlSession cqlSession = astraClient.cqlSession();
-        System.out.println("+ Cql Version (cql)   : " + cqlSession
-                .execute("SELECT cql_version from system.local")
-                .one().getString("cql_version"));
-    }
-    
-    public static void testRestApi(AstraClient astraClient) {
-        System.out.println("\n[STARGATE/DATA]");
-        System.out.println("+ Keyspaces (rest)    : " + astraClient.apiStargateData()
-            .keyspaceNames().collect(Collectors.toList()));
-    }
+
+
     
     public static void testDocumentApi(AstraClient astraClient) {
         System.out.println("\n[STARGATE/DOCUMENT]");
@@ -98,6 +83,6 @@ public class QuickStartAstra {
                 .one().getString("cql_version"));
     }
     
-   
+   */
     
 }
