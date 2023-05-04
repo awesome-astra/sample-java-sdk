@@ -5,6 +5,8 @@ import com.datastax.oss.driver.api.core.CqlSession;
 
 public class AstraSdkDrivers {
     public static void main(String[] args) {
+
+        // Connect
         try (AstraClient astraClient = AstraClient.builder()
                 .withClientId("client_id")
                 .withClientSecret("client_secret")

@@ -12,6 +12,8 @@ import java.util.Map;
 
 public class AstraSdkRestApi {
     public static void main(String[] args) {
+
+        // Connect
         try (AstraClient astraClient = AstraClient.builder()
                 .withClientId("client_id")
                 .withClientSecret("client_secret")

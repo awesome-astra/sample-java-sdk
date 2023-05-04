@@ -14,11 +14,14 @@ public class AstraSdkDocRepository {
 
     public static void main(String[] args) {
 
+        // Connect
         try (AstraClient astraClient = AstraClient.builder()
-                .withClientId("token")
-                .withClientSecret("AstraCS:uZclXTYecCAqPPjiNmkezapR:e87d6edb702acd87516e4ef78e0c0e515c32ab2c3529f5a3242688034149a0e4")
-                .withDatabaseId("3043a40f-39bf-464e-8337-dc283167b2c3")
-                .withDatabaseRegion("us-east1")
+                .withClientId("client_id")
+                .withClientSecret("client_secret")
+                .withDatabaseId("database_id")
+                .withDatabaseRegion("database_region")
+                .withCqlKeyspace("demo")
+                .enableCql()
                 .build()) {
 
             // Doc Repository
